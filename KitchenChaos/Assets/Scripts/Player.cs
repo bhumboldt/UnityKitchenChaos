@@ -35,5 +35,9 @@ public class Player : MonoBehaviour
         float speed = Time.deltaTime * moveSpeed;
         
         transform.position += moveDir * speed;
+        
+        // Rotate the character to face walking direction. Use slerp for rotations
+        float rotateSpeed = 10f;
+        transform.forward = Vector3.Slerp(transform.forward, moveDir, rotateSpeed * Time.deltaTime);
     }
 }
