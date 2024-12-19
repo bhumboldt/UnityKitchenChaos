@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &109213256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+  m_PrefabInstance: {fileID: 8424540046820798983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d73970c1da9492991c78fda28524ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &145798933
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,9 +683,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
       propertyPath: kitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: 4c0d6bc77724d4e718c704216922af25, type: 2}
+    - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 109213256}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -755,6 +774,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 46, y: 0, z: 0}
+--- !u!114 &1702142962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+  m_PrefabInstance: {fileID: 1066883374}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d73970c1da9492991c78fda28524ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762862060
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,9 +947,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
       propertyPath: kitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: a23f92e813bb74c2c8bdc2b88f027eaa, type: 2}
+    - target: {fileID: 7658196850886692377, guid: e6985ce56ed4e48d0b655e99bb308442, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1702142962}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
