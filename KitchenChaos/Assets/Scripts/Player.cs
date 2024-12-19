@@ -9,7 +9,38 @@ public class Player : MonoBehaviour
 
     private bool isWalking;
     private Vector3 lastInteractDir;
-    
+
+
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInputOnOnInteractAction;
+    }
+
+    private void GameInputOnOnInteractAction(object sender, EventArgs e)
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
+
+        if (moveDir != Vector3.zero)
+        {
+            lastInteractDir = moveDir;
+        }
+        
+        float interactionDistance = 2f;
+
+        // Only returns first object it hits (RayCast). Could use RaycastAll and loop through
+        if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit objectHit, interactionDistance, countersLayerMask))
+        {
+            // Use this instead of tags, tags are not great because they use string references
+            if (objectHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                // Has clear counter
+                clearCounter.Interact();
+                Debug.Log("INTERACT");
+            }
+        }
+    }
+
     private void Update()
     {
         HandleMovement();
