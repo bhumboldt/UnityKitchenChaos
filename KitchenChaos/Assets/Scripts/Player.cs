@@ -5,10 +5,43 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private GameInput gameInput;
+    [SerializeField] private LayerMask countersLayerMask;
 
     private bool isWalking;
+    private Vector3 lastInteractDir;
     
     private void Update()
+    {
+        HandleMovement();
+        HandleInteractions();
+    }
+
+    private void HandleInteractions()
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
+
+        if (moveDir != Vector3.zero)
+        {
+            lastInteractDir = moveDir;
+        }
+        
+        float interactionDistance = 2f;
+
+        // Only returns first object it hits (RayCast). Could use RaycastAll and loop through
+        if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit objectHit, interactionDistance, countersLayerMask))
+        {
+            // Use this instead of tags, tags are not great because they use string references
+            if (objectHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                // Has clear counter
+                
+            }
+        }
+        
+    }
+
+    private void HandleMovement()
     {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         
