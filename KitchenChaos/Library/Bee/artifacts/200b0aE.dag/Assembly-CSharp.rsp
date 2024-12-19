@@ -429,6 +429,7 @@
 "Assets/Scripts/GameInput.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerAnimator.cs"
+"Assets/Scripts/SelectedCounterVisual.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic
