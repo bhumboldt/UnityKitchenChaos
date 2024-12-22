@@ -30,6 +30,12 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private void Start()
     {
         gameInput.OnInteractAction += GameInputOnOnInteractAction;
+        gameInput.OnInteractAlternateAction += GameInputOnOnInteractAlternateAction;
+    }
+
+    private void GameInputOnOnInteractAlternateAction(object sender, EventArgs e)
+    {
+        selectedCounter?.InteractAlternate(this);
     }
 
     private void GameInputOnOnInteractAction(object sender, EventArgs e)
@@ -94,7 +100,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             // Cannot move towards this direction, split and move either just x or z
             // Attempt only x movement
             Vector3 moveDirx = new Vector3(moveDir.x, 0f, 0f).normalized;
-            canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirx, moveDistance);
+            canMove = moveDir.x != 0f && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirx, moveDistance);
 
             if (canMove)
             {
@@ -105,7 +111,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             {
                 // Attempt z movement
                 Vector3 moveDirZ = new Vector3(0f, 0f, moveDir.z).normalized;
-                canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirZ, moveDistance);
+                canMove = moveDir.z != 0f && !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirZ, moveDistance);
 
                 if (canMove)
                 {

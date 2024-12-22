@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class GameInput : MonoBehaviour
 {
     public event EventHandler OnInteractAction;
+    public event EventHandler OnInteractAlternateAction;
     
     private PlayerInputActions playerInputActions;
     
@@ -15,6 +16,12 @@ public class GameInput : MonoBehaviour
         
         // Only notify when action is triggered (unlike movement where we will constantly query)
         playerInputActions.Player.Interact.performed += InteractOnperformed;
+        playerInputActions.Player.InteractAlternate.performed += InteractAlternateOnperformed;
+    }
+
+    private void InteractAlternateOnperformed(InputAction.CallbackContext obj)
+    {
+        OnInteractAlternateAction?.Invoke(this, EventArgs.Empty);
     }
 
     private void InteractOnperformed(InputAction.CallbackContext obj)

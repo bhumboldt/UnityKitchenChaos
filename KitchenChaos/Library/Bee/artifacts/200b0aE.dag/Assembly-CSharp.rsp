@@ -429,6 +429,7 @@
 "Assets/Scripts/ClearCounter.cs"
 "Assets/Scripts/ContainerCounter.cs"
 "Assets/Scripts/ContainerCounterVisual.cs"
+"Assets/Scripts/CuttingCounter.cs"
 "Assets/Scripts/GameInput.cs"
 "Assets/Scripts/IKitchenObjectParent.cs"
 "Assets/Scripts/KitchenObject.cs"
