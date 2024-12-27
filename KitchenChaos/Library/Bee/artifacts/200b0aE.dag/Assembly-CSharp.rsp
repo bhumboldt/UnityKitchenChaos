@@ -436,6 +436,7 @@
 "Assets/Scripts/IKitchenObjectParent.cs"
 "Assets/Scripts/KitchenObject.cs"
 "Assets/Scripts/KitchenObjectSO.cs"
+"Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerAnimator.cs"
 "Assets/Scripts/ProgressBarUI.cs"
