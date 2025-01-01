@@ -432,6 +432,7 @@
 "Assets/Scripts/Counters/ContainerCounterVisual.cs"
 "Assets/Scripts/Counters/CuttingCounter.cs"
 "Assets/Scripts/Counters/CuttingCounterVisual.cs"
+"Assets/Scripts/Counters/DeliveryCounter.cs"
 "Assets/Scripts/Counters/PlatesCounter.cs"
 "Assets/Scripts/Counters/PlatesCounterVisual.cs"
 "Assets/Scripts/Counters/StoveCounter.cs"
