@@ -441,6 +441,7 @@
 "Assets/Scripts/IKitchenObjectParent.cs"
 "Assets/Scripts/KitchenObject.cs"
 "Assets/Scripts/LookAtCamera.cs"
+"Assets/Scripts/PlateCompleteVisual.cs"
 "Assets/Scripts/PlateKitchenObject.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerAnimator.cs"
