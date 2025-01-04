@@ -5,6 +5,9 @@ using Random = UnityEngine.Random;
 
 public class DeliveryManager : MonoBehaviour
 {
+    public event EventHandler OnRecipeSpawned;
+    public event EventHandler OnRecipeCompleted;
+    
     public static DeliveryManager Instance { get; private set; }
     
     [SerializeField] private RecipeListSO recipeListSO;
@@ -31,9 +34,14 @@ public class DeliveryManager : MonoBehaviour
                 RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[Random.Range(0, recipeListSO.recipeSOList.Count)];
                 waitingRecipes.Add(waitingRecipeSO);
                 
-                Debug.Log(waitingRecipeSO.name);
+                OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
             }
         }
+    }
+
+    public List<RecipeSO> GetWaitingRecipes()
+    {
+        return waitingRecipes;
     }
 
     public void DeliverRecipe(PlateKitchenObject plate)
@@ -69,8 +77,9 @@ public class DeliveryManager : MonoBehaviour
                 if (plateContentsMatchRecipe)
                 {
                     // Player delivered correct recipe
-                    Debug.Log("Player delivered the correct recipe!");
                     waitingRecipes.RemoveAt(i);
+                    
+                    OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     
                     return;
                 }
