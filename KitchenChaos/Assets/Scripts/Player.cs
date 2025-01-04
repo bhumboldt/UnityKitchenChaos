@@ -4,6 +4,8 @@ using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour, IKitchenObjectParent
 {
+    public event EventHandler OnPickedUpSomething;
+    
     public static Player Instance { get; private set; }
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
 
@@ -152,6 +154,10 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public void SetKitchenObject(KitchenObject kitchenObject)
     {
         // Could play an animation, sound effect, etc.
+        if (kitchenObject != null)
+        {
+            OnPickedUpSomething?.Invoke(this, EventArgs.Empty);
+        }
         this.kitchenObject = kitchenObject;
     }
 
