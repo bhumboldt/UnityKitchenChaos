@@ -12,6 +12,8 @@ public class DeliveryManager : MonoBehaviour
     public event EventHandler OnRecipeFailed;
     
     public static DeliveryManager Instance { get; private set; }
+
+    private int recipesDeliveredSuccessfully;
     
     [SerializeField] private RecipeListSO recipeListSO;
     [SerializeField] private float spawnRecipeTimerMax = 4f;
@@ -84,6 +86,7 @@ public class DeliveryManager : MonoBehaviour
                     
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
+                    recipesDeliveredSuccessfully++;
                     
                     return;
                 }
@@ -93,5 +96,10 @@ public class DeliveryManager : MonoBehaviour
         // No matches found!
         // Player did not deliver correct recipe
         OnRecipeFailed?.Invoke(this, EventArgs.Empty);
+    }
+
+    public int GetRecipesDeliveredSuccessfully()
+    {
+        return recipesDeliveredSuccessfully;
     }
 }
