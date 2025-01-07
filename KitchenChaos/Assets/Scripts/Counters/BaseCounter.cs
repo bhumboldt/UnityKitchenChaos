@@ -48,4 +48,9 @@ public Transform GetKitchenObjectFollowTransform()
    {
       return kitchenObject != null;
    }
+   
+   public static void ResetStaticData()
+   {
+      OnAnyObjectPlacedHere = null;
+   }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 public class CuttingCounter : BaseCounter, IHasProgress
 {
 
+    // With static events, you need to manually reset state
     public static event EventHandler OnAnyCut;
     
     public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
@@ -116,5 +117,10 @@ public class CuttingCounter : BaseCounter, IHasProgress
         }
 
         return null;
+    }
+
+    new public static void ResetStaticData()
+    {
+        OnAnyCut = null;
     }
 }
