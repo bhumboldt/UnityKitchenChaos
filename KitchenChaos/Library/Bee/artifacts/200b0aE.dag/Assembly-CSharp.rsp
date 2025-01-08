@@ -463,9 +463,11 @@
 "Assets/Scripts/ScriptableObjects/RecipeSO.cs"
 "Assets/Scripts/SelectedCounterVisual.cs"
 "Assets/Scripts/SoundManager.cs"
+"Assets/Scripts/StoveBurnWarningUI.cs"
 "Assets/Scripts/StoveCounterSound.cs"
 "Assets/Scripts/UI/DeliveryManagerSingleUI.cs"
 "Assets/Scripts/UI/DeliveryManagerUI.cs"
+"Assets/Scripts/UI/DeliveryResultUI.cs"
 "Assets/Scripts/UI/GameOverUI.cs"
 "Assets/Scripts/UI/GamePlayingClockUI.cs"
 "Assets/Scripts/UI/GameStartCountdownUI.cs"
@@ -475,6 +477,7 @@
 "Assets/Scripts/UI/PlateIconSingleUI.cs"
 "Assets/Scripts/UI/PlateIconsUI.cs"
 "Assets/Scripts/UI/ProgressBarUI.cs"
+"Assets/Scripts/UI/TutorialUI.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic

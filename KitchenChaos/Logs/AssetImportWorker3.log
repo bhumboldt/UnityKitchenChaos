@@ -4453,3 +4453,39 @@ Memory consumption went from 173.7 MB to 167.7 MB.
 Total: 16.922439 ms (FindLiveObjects: 0.923099 ms CreateObjectMapping: 1.429168 ms MarkObjects: 9.679858 ms  DeleteObjects: 4.888803 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 108718.755902 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '162954e8d144e24eb8ff8e77fdeb3151') in 1.316307714 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF StartCountdown.mat
+  artifactKey: Guid(f8260fc79fbc146d790ca877b82e2237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF StartCountdown.mat using Guid(f8260fc79fbc146d790ca877b82e2237) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8bef00ad876857b84632ee0af1192c5') in 0.135859453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Shaders/MovingVIsual.shadergraph
+  artifactKey: Guid(3a888b2c3bea346c99423d42d3c07e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MovingVIsual.shadergraph using Guid(3a888b2c3bea346c99423d42d3c07e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55536414c7f35bd9ebe765826ed435f4') in 0.054192759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/_Assets/Meshes/Uncooked meat patty.fbx
+  artifactKey: Guid(02a24f0f7eb1b624ab903663ee9a248c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Meshes/Uncooked meat patty.fbx using Guid(02a24f0f7eb1b624ab903663ee9a248c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbeff3283e63d4a9e5516a5ca8e053be') in 0.164039614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting

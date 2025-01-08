@@ -4533,3 +4533,31 @@ Memory consumption went from 173.5 MB to 167.3 MB.
 Total: 17.128964 ms (FindLiveObjects: 0.865704 ms CreateObjectMapping: 1.368541 ms MarkObjects: 9.498789 ms  DeleteObjects: 5.394438 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 6906.232778 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d8b39a9045eb6462ab1d02c716e3609') in 1.485571982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/_Assets/Meshes/Burned meat patty.fbx
+  artifactKey: Guid(da32d18f77866bf47945f10fe354f359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Meshes/Burned meat patty.fbx using Guid(da32d18f77866bf47945f10fe354f359) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7eaf2d24891d6c7a2836278d03733b33') in 0.208678653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/_Assets/Meshes/Cooked meat patty.fbx
+  artifactKey: Guid(598a91cf1806eae49abf8273f6ad8ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Meshes/Cooked meat patty.fbx using Guid(598a91cf1806eae49abf8273f6ad8ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cbcd287253900bf001c153d515e9e96') in 0.048959816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
